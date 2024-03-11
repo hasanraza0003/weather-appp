@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+}
+.main-container{
+    max-width: 80vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr 0.5fr 0.5fr 1fr 0.5fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    place-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.76);
+    backdrop-filter: blur(20px);
+    color:white;
+    overflow: hidden;
+}
+.city-date ,.temp-min-max{
+    display: grid;
+    grid-column: span 2;
+}
+
+.input{
+    grid-column: span 2;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
+    place-items: center;
+    & input{
+        background-color: rgb(255, 255, 255);
+        width: auto;
+        border-radius: 10px;
+        border: 2px solid rgba(10, 0, 0, 0.747);
+        padding: 0.5rem;
+        margin-right: 1rem;
+    }
+}
+.city{
+    grid-column: span 2;
+}
+.date{
+    grid-column: span 2;
+}
+.weather{
+    grid-column: span 2;
+    color: rgb(252, 252, 252);
+    padding:10px;
+    font-size: 1.5rem;
+}
+.image{
+    grid-column: span 2;
+}
+.temprature{
+    
+    grid-column: span 2;
+}
+
+.cards{
+    margin: 5px;
+    width: 100%;
+    border: 2px solid rgba(255, 252, 252, 0.747);
+    color: rgb(255, 255, 255);
+    padding:10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+
+    & i{
+        display: grid;
+        grid-row: span 2;
+        
+    }
+}
+
+.min-max{
+    display: flex;
+    grid-column: span 2;
+    
+    & .min,.max{
+        margin: 1rem;
+    }
+}
+
+.footer{
+    display: grid;
+    place-items: center;
+    grid-column: span 2 ;
+    display: flex;
+    gap: 3rem;
+}
+h3{
+    margin-top: 1rem;
+    display: grid;
+    grid-column: span 2;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* dark and light modes  */
+.body-light{
+    background-image: url("./images/light.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.body-dark{
+    background-image: url("./images/dark.jpg");
+    background-repeat: no-repeat;
+    background-size:cover
+}
+
